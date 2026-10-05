@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="es-MX" class="no-js" data-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <!-- ===== SEO ===== -->
+    <title>Arq. Ronnie Cruz | Arquitectura, Renders y Construcción</title>
+    <meta name="description" content="Diseño arquitectónico, planos, fachadas, renders 3D, interiorismo, construcción y supervisión de obra en Campeche y Yucatán. Agenda tu cita por WhatsApp.">
+    <meta name="keywords" content="arquitecto, diseño arquitectónico, planos arquitectónicos, renders 3D, diseño de fachadas, interiorismo, construcción, supervisión de obra, levantamientos arquitectónicos, Campeche, Yucatán, Mérida, Ciudad del Carmen">
+    <meta name="author" content="Arq. Ronnie Cruz">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#060A12">
+    <!-- TODO (al publicar): agregar <link rel="canonical"> y og:url con el dominio final, y og:image con una imagen absoluta de 1200x630. -->
+
+    <!-- ===== Open Graph / Twitter ===== -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="Arq. Ronnie Cruz | Diseño y Construcción">
+    <meta property="og:title" content="Arq. Ronnie Cruz | Arquitectura, Renders y Construcción">
+    <meta property="og:description" content="Transformamos tus ideas en espacios que inspiran. Diseño arquitectónico, renders realistas, construcción y supervisión de obra.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Arq. Ronnie Cruz | Arquitectura, Renders y Construcción">
+    <meta name="twitter:description" content="Del primer trazo a la entrega de tu obra, con un solo equipo.">
+
+    <!-- ===== Iconos ===== -->
+    <link rel="icon" type="image/png" sizes="256x256" href="img/favicon-256.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+    <!-- ===== Tema (se aplica antes del primer pintado para evitar parpadeo) ===== -->
+    <script>
+        (function () {
+            var d = document.documentElement;
+            d.classList.remove('no-js');
+            d.classList.add('js', 'is-loading');
+            try {
+                var t = localStorage.getItem('rc-theme');
+                if (t === 'light' || t === 'dark') d.setAttribute('data-theme', t);
+            } catch (e) {}
+            // Seguro: si app.js no llegara a cargar, nunca dejamos la página bloqueada tras el preloader.
+            setTimeout(function () {
+                if (d.classList.contains('is-ready')) return;
+                d.classList.remove('is-loading');
+                d.classList.add('is-ready');
+                var l = document.getElementById('loader');
+                if (l) l.style.display = 'none';
+            }, 10000);
+        })();
+    </script>
+
+    <!-- ===== Tipografías (autoalojadas) ===== -->
+    <link rel="preload" href="fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/michroma-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="img/logo-mark-dark.webp" as="image" type="image/webp">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- ===== Datos estructurados ===== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": ["GeneralContractor", "ProfessionalService"],
+        "name": "Arq. Ronnie Cruz | Diseño y Construcción",
+        "alternateName": "ARQ Ronnie Cruz",
+        "description": "Diseño arquitectónico, planos, fachadas, renders 3D, interiorismo, levantamientos arquitectónicos, construcción y supervisión de obra.",
+        "telephone": "+52-938-137-2075",
+        "email": "ronniecruz2304@gmail.com",
+        "priceRange": "$$",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Mérida",
+            "addressRegion": "Yucatán",
+            "addressCountry": "MX"
+        },
+        "areaServed": [
+            { "@type": "State", "name": "Campeche" },
+            { "@type": "State", "name": "Yucatán" }
+        ],
+        "sameAs": ["https://www.instagram.com/arq.ronnie.cruzb"],
+        "knowsAbout": ["Diseño arquitectónico", "Planos arquitectónicos", "Renders 3D", "Diseño de fachadas", "Interiorismo", "Construcción", "Supervisión de obra"],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servicios de arquitectura y construcción",
+            "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Planos arquitectónicos" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Renders 3D" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Diseño de fachadas" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Diseño interior" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Levantamientos arquitectónicos" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Construcción" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Supervisión de obra" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Multiservicios" } }
+            ]
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            { "@type": "Question", "name": "¿Cómo solicito una cotización?", "acceptedAnswer": { "@type": "Answer", "text": "Escríbenos por WhatsApp o llena el formulario de contacto. Te responderemos para agendar una cita y entender lo que necesitas." } },
+            { "@type": "Question", "name": "¿Atienden solo con cita?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Para darte atención personalizada trabajamos con cita previa. Puedes agendarla por WhatsApp." } },
+            { "@type": "Question", "name": "¿Qué incluye el diseño arquitectónico?", "acceptedAnswer": { "@type": "Answer", "text": "Dependiendo de tu proyecto: levantamiento, plantas arquitectónicas, diseño de fachada, diseño interior y renders realistas. Lo definimos contigo en la cita." } },
+            { "@type": "Question", "name": "¿Pueden construir lo que diseñan?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Además del diseño ofrecemos construcción y supervisión de obra, para que el resultado sea fiel al proyecto aprobado." } },
+            { "@type": "Question", "name": "¿Trabajan en Campeche y Yucatán?", "acceptedAnswer": { "@type": "Answer", "text": "Tenemos atención en Ciudad del Carmen, Campeche, y en Mérida, Yucatán. Escríbenos para confirmar disponibilidad en tu zona." } },
+            { "@type": "Question", "name": "¿Ofrecen otros servicios además del diseño y la obra?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, ofrecemos multiservicios. Cuéntanos qué necesitas y te decimos cómo podemos ayudarte." } }
+        ]
+    }
+    </script>
+</head>
+
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<!-- Sprite de iconos (Phosphor Icons, licencia MIT) -->
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
+<symbol id="i-arrow-up-right" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"/></symbol>
+<symbol id="i-arrow-right" viewBox="0 0 256 256"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></symbol>
+<symbol id="i-caret-down" viewBox="0 0 256 256"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></symbol>
+<symbol id="i-plus" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></symbol>
+<symbol id="i-x" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"/></symbol>
+<symbol id="i-list" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"/></symbol>
+<symbol id="i-sun" viewBox="0 0 256 256"><path d="M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm72,88a64,64,0,1,1-64-64A64.07,64.07,0,0,1,192,128Zm-16,0a48,48,0,1,0-48,48A48.05,48.05,0,0,0,176,128ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM48,128a8,8,0,0,0-8-8H16a8,8,0,0,0,0,16H40A8,8,0,0,0,48,128Zm80,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V216A8,8,0,0,0,128,208Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"/></symbol>
+<symbol id="i-moon" viewBox="0 0 256 256"><path d="M233.54,142.23a8,8,0,0,0-8-2,88.08,88.08,0,0,1-109.8-109.8,8,8,0,0,0-10-10,104.84,104.84,0,0,0-52.91,37A104,104,0,0,0,136,224a103.09,103.09,0,0,0,62.52-20.88,104.84,104.84,0,0,0,37-52.91A8,8,0,0,0,233.54,142.23ZM188.9,190.34A88,88,0,0,1,65.66,67.11a89,89,0,0,1,31.4-26A106,106,0,0,0,96,56,104.11,104.11,0,0,0,200,160a106,106,0,0,0,14.92-1.06A89,89,0,0,1,188.9,190.34Z"/></symbol>
+<symbol id="i-whatsapp-logo" viewBox="0 0 256 256"><path d="M187.58,144.84l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88,40,40,0,0,0,40-40A8,8,0,0,0,187.58,144.84ZM152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155l14.61-9.74,23,11.48A24,24,0,0,1,152,176ZM128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-6.54-.67L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Z"/></symbol>
+<symbol id="i-instagram-logo" viewBox="0 0 256 256"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"/></symbol>
+<symbol id="i-envelope-simple" viewBox="0 0 256 256"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"/></symbol>
+<symbol id="i-phone" viewBox="0 0 256 256"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"/></symbol>
+<symbol id="i-map-pin" viewBox="0 0 256 256"><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"/></symbol>
+<symbol id="i-clock" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z"/></symbol>
+<symbol id="i-calendar-check" viewBox="0 0 256 256"><path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-38.34-85.66a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L116,164.69l42.34-42.35A8,8,0,0,1,169.66,122.34Z"/></symbol>
+<symbol id="i-paper-plane-tilt" viewBox="0 0 256 256"><path d="M227.32,28.68a16,16,0,0,0-15.66-4.08l-.15,0L19.57,82.84a16,16,0,0,0-2.49,29.8L102,154l41.3,84.87A15.86,15.86,0,0,0,157.74,248q.69,0,1.38-.06a15.88,15.88,0,0,0,14-11.51l58.2-191.94c0-.05,0-.1,0-.15A16,16,0,0,0,227.32,28.68ZM157.83,231.85l-.05.14,0-.07-40.06-82.3,48-48a8,8,0,0,0-11.31-11.31l-48,48L24.08,98.25l-.07,0,.14,0L216,40Z"/></symbol>
+<symbol id="i-check-circle" viewBox="0 0 256 256"><path d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></symbol>
+<symbol id="i-blueprint" viewBox="0 0 256 256"><path d="M232,56H72V40a8,8,0,0,0-8-8H48A32,32,0,0,0,16,64V176a32,32,0,0,0,32,32H232a8,8,0,0,0,8-8V64A8,8,0,0,0,232,56ZM32,64A16,16,0,0,1,48,48h8v96H48a31.82,31.82,0,0,0-16,4.29ZM224,192H48a16,16,0,0,1,0-32H64a8,8,0,0,0,8-8V72H224ZM104,136a8,8,0,0,0,0,16h16v8a8,8,0,0,0,16,0v-8h24v8a8,8,0,0,0,16,0v-8h16a8,8,0,0,0,0-16H176V120h16a8,8,0,0,0,0-16H176V96a8,8,0,0,0-16,0v8H136V96a8,8,0,0,0-16,0v8H104a8,8,0,0,0,0,16h16v16Zm32-16h24v16H136Z"/></symbol>
+<symbol id="i-cube" viewBox="0 0 256 256"><path d="M223.68,66.15,135.68,18h0a15.88,15.88,0,0,0-15.36,0l-88,48.17a16,16,0,0,0-8.32,14v95.64a16,16,0,0,0,8.32,14l88,48.17a15.88,15.88,0,0,0,15.36,0l88-48.17a16,16,0,0,0,8.32-14V80.18A16,16,0,0,0,223.68,66.15ZM128,32h0l80.34,44L128,120,47.66,76ZM40,90l80,43.78v85.79L40,175.82Zm96,129.57V133.82L216,90v85.78Z"/></symbol>
+<symbol id="i-house-line" viewBox="0 0 256 256"><path d="M240,208H224V136l2.34,2.34A8,8,0,0,0,237.66,127L139.31,28.68a16,16,0,0,0-22.62,0L18.34,127a8,8,0,0,0,11.32,11.31L32,136v72H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM48,120l80-80,80,80v88H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48Zm96,88H112V160h32Z"/></symbol>
+<symbol id="i-armchair" viewBox="0 0 256 256"><path d="M216,88.8V72a40,40,0,0,0-40-40H80A40,40,0,0,0,40,72V88.8a40,40,0,0,0,0,78.4V200a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V167.2a40,40,0,0,0,0-78.4ZM80,48h96a24,24,0,0,1,24,24V88.8A40.07,40.07,0,0,0,168,128H88A40.07,40.07,0,0,0,56,88.8V72A24,24,0,0,1,80,48ZM208.39,152H208a8,8,0,0,0-8,8v40H56V160a8,8,0,0,0-8-8h-.39A24,24,0,1,1,72,128v40a8,8,0,0,0,16,0V144h80v24a8,8,0,0,0,16,0V128a24,24,0,1,1,24.39,24Z"/></symbol>
+<symbol id="i-ruler" viewBox="0 0 256 256"><path d="M235.32,73.37,182.63,20.69a16,16,0,0,0-22.63,0L20.68,160a16,16,0,0,0,0,22.63l52.69,52.68a16,16,0,0,0,22.63,0L235.32,96A16,16,0,0,0,235.32,73.37ZM84.68,224,32,171.31l32-32,26.34,26.35a8,8,0,0,0,11.32-11.32L75.31,128,96,107.31l26.34,26.35a8,8,0,0,0,11.32-11.32L107.31,96,128,75.31l26.34,26.35a8,8,0,0,0,11.32-11.32L139.31,64l32-32L224,84.69Z"/></symbol>
+<symbol id="i-crane" viewBox="0 0 256 256"><path d="M228.12,17.14a8,8,0,0,0-7.88-.2L102,80H32A16,16,0,0,0,16,96V200a16,16,0,0,0,16,16h88a16,16,0,0,0,16-16V168a7.81,7.81,0,0,0-.34-2.3L113.54,92,216,37.33V160H200v-8a8,8,0,0,0-16,0v8a16,16,0,0,0,16,16h16a16,16,0,0,0,16-16V24A8,8,0,0,0,228.12,17.14ZM98.05,96l19.2,64H64V96ZM48,96v64H32V96ZM32,200h0V176h88v24Z"/></symbol>
+<symbol id="i-hard-hat" viewBox="0 0 256 256"><path d="M224,152V136a96.37,96.37,0,0,0-64-90.51V40a16,16,0,0,0-16-16H112A16,16,0,0,0,96,40v5.49A96.37,96.37,0,0,0,32,136v16a16,16,0,0,0-16,16v24a16,16,0,0,0,16,16H224a16,16,0,0,0,16-16V168A16,16,0,0,0,224,152Zm-16-16v16H160V62.67A80.36,80.36,0,0,1,208,136ZM144,40V152H112V40ZM48,136A80.36,80.36,0,0,1,96,62.67V152H48Zm176,56H32V168H224v24Z"/></symbol>
+<symbol id="i-toolbox" viewBox="0 0 256 256"><path d="M224,64H176V56a24,24,0,0,0-24-24H104A24,24,0,0,0,80,56v8H32A16,16,0,0,0,16,80V192a16,16,0,0,0,16,16H224a16,16,0,0,0,16-16V80A16,16,0,0,0,224,64ZM96,56a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM224,80v32H192v-8a8,8,0,0,0-16,0v8H80v-8a8,8,0,0,0-16,0v8H32V80Zm0,112H32V128H64v8a8,8,0,0,0,16,0v-8h96v8a8,8,0,0,0,16,0v-8h32v64Z"/></symbol>
+<symbol id="i-pencil-ruler" viewBox="0 0 256 256"><path d="M208,32H160a16,16,0,0,0-16,16V208a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32Zm0,176H160V176h24a8,8,0,0,0,0-16H160V136h24a8,8,0,0,0,0-16H160V96h24a8,8,0,0,0,0-16H160V48h48V208ZM77.66,26.34a8,8,0,0,0-11.32,0l-32,32A8,8,0,0,0,32,64V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V64a8,8,0,0,0-2.34-5.66ZM48,176V80H64v96ZM80,80H96v96H80ZM72,43.31,92.69,64H51.31ZM48,208V192H96v16Z"/></symbol>
+<symbol id="i-compass-tool" viewBox="0 0 256 256"><path d="M215.12,123.64a8,8,0,1,0-14.24-7.28,79.58,79.58,0,0,1-33.08,33.5l-16.58-37.32A40,40,0,0,0,136,40.8V24a8,8,0,0,0-16,0V40.8a40,40,0,0,0-15.22,71.74L56.69,220.75a8,8,0,1,0,14.62,6.5l25.14-56.56A95.48,95.48,0,0,0,128,176a99.13,99.13,0,0,0,31.6-5.21l25.09,56.46a8,8,0,0,0,14.62-6.5l-25-56.25A95.81,95.81,0,0,0,215.12,123.64ZM128,56a24,24,0,1,1-24,24A24,24,0,0,1,128,56Zm0,104a79.52,79.52,0,0,1-25-4l16.42-36.94a39.81,39.81,0,0,0,17.2,0l16.48,37.06A83.21,83.21,0,0,1,128,160Z"/></symbol>
+<symbol id="i-buildings" viewBox="0 0 256 256"><path d="M240,208H224V96a16,16,0,0,0-16-16H144V32a16,16,0,0,0-24.88-13.32L39.12,72A16,16,0,0,0,32,85.34V208H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM208,96V208H144V96ZM48,85.34,128,32V208H48ZM112,112v16a8,8,0,0,1-16,0V112a8,8,0,1,1,16,0Zm-32,0v16a8,8,0,0,1-16,0V112a8,8,0,1,1,16,0Zm0,56v16a8,8,0,0,1-16,0V168a8,8,0,0,1,16,0Zm32,0v16a8,8,0,0,1-16,0V168a8,8,0,0,1,16,0Z"/></symbol>
+</svg>
+
+<!-- ============================================================
+     PRELOADER: anillo de progreso con la marca + cortina
+     ============================================================ -->
+<div id="loader" class="loader" role="status" aria-live="polite" aria-label="Cargando el sitio">
+    <div class="loader-panel loader-panel--top"></div>
+    <div class="loader-panel loader-panel--bottom"></div>
+    <div class="loader-core">
+        <div class="loader-ring">
+            <svg viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+                <circle class="lr-guide" cx="100" cy="100" r="95"/>
+                <circle class="lr-track" cx="100" cy="100" r="88"/>
+                <circle class="lr-fill" cx="100" cy="100" r="88" pathLength="100"/>
+            </svg>
+            <img class="loader-mark" src="img/logo-mark-dark.webp" alt="" width="320" height="282">
+        </div>
+        <p class="loader-name">RONNIE CRUZ</p>
+        <p class="loader-meta"><span class="loader-pct" id="loader-pct">0</span><span class="loader-pct-sign">%</span><span class="loader-msg">Trazando tu proyecto</span></p>
+    </div>
+    <div class="loader-line" aria-hidden="true"><span></span></div>
+</div>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="site-header" id="top">
+    <div class="header-inner">
+        <a class="brand" href="#inicio" aria-label="Arq. Ronnie Cruz, ir al inicio">
+            <img class="brand-mark brand-mark--dark" src="img/logo-mark-dark.webp" alt="" width="320" height="282">
+            <img class="brand-mark brand-mark--light" src="img/logo-mark-light.webp" alt="" width="320" height="282" loading="lazy">
+            <span class="brand-text">
+                <span class="brand-name">RONNIE CRUZ</span>
+                <span class="brand-tag">Diseño y Construcción</span>
+            </span>
+        </a>
+
+        <nav class="nav" aria-label="Principal">
+            <ul>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#proceso">Proceso</a></li>
+                <li><a href="#render">Render</a></li>
+                <li><a href="#espacios">Espacios</a></li>
+                <li><a href="#faq">Preguntas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <button class="icon-btn theme-toggle" type="button" aria-label="Cambiar a tema claro" data-theme-toggle>
+                <svg class="ic ic-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+                <svg class="ic ic-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+            </button>
+            <a class="btn btn-primary btn-sm header-cta" href="https://wa.me/529381372075" data-wa="nav" data-magnetic>
+                <span>Agendar cita</span>
+            </a>
+            <button class="icon-btn menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
+                <svg class="ic ic-open" aria-hidden="true"><use href="#i-list"/></svg>
+                <svg class="ic ic-close" aria-hidden="true"><use href="#i-x"/></svg>
+            </button>
+        </div>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+</header>
+
+<!-- ============================================================
+     MENÚ MÓVIL
+     ============================================================ -->
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true" inert>
+    <nav class="mobile-nav" aria-label="Menú móvil">
+        <a href="#servicios" data-menu-link>Servicios</a>
+        <a href="#proceso" data-menu-link>Proceso</a>
+        <a href="#render" data-menu-link>Render</a>
+        <a href="#espacios" data-menu-link>Espacios</a>
+        <a href="#faq" data-menu-link>Preguntas</a>
+        <a href="#contacto" data-menu-link>Contacto</a>
+    </nav>
+    <div class="mobile-foot">
+        <a class="btn btn-primary btn-lg" href="https://wa.me/529381372075" data-wa="nav" data-menu-link>
+            <svg class="ic" aria-hidden="true"><use href="#i-whatsapp-logo"/></svg>
+            <span>Agendar cita por WhatsApp</span>
+        </a>
+        <p class="mobile-meta">Atención solo con cita<br><a href="tel:+529381372075">+52 938 137 2075</a></p>
+    </div>
+</div>
+
+<main id="contenido">
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" id="inicio" aria-labelledby="hero-title">
+    <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+        <div class="hero-copy">
+            <p class="eyebrow h-in" style="--i:0">Diseño y Construcción</p>
+            <h1 class="hero-title" id="hero-title">
+                <span class="sr-only">Convertimos tu idea en una casa, una fachada, un interior o una obra.</span>
+                <span class="hero-line" aria-hidden="true"><span class="hero-line-in h-in" style="--i:1">Convertimos tu idea en</span></span>
+                <span class="hero-line hero-rotator h-in" style="--i:2" aria-hidden="true" data-rotator>
+                    <span class="rot is-active">una casa.</span>
+                    <span class="rot">una fachada.</span>
+                    <span class="rot">un interior.</span>
+                    <span class="rot">una obra.</span>
+                </span>
+            </h1>
+            <p class="hero-lead h-in" style="--i:3">Diseño arquitectónico, renders y construcción con un solo equipo, del primer trazo a la entrega de tu obra.</p>
+            <div class="hero-actions h-in" style="--i:4">
+                <a class="btn btn-primary btn-lg" href="https://wa.me/529381372075" data-wa="hero" data-magnetic>
+                    <span>Quiero mi proyecto</span>
+                    <svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                </a>
+                <a class="btn btn-ghost btn-lg" href="#servicios">
+                    <span>Ver servicios</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     MARQUEE (único de la página)
+     ============================================================ -->
+<section class="marquee" aria-label="Lo que hacemos">
+    <div class="marquee-track" data-marquee aria-hidden="true">
+        <ul class="marquee-group">
+            <li>Planos</li><li class="sep"></li>
+            <li>Renders 3D</li><li class="sep"></li>
+            <li>Fachadas</li><li class="sep"></li>
+            <li>Interiores</li><li class="sep"></li>
+            <li>Levantamientos</li><li class="sep"></li>
+            <li>Construcción</li><li class="sep"></li>
+            <li>Supervisión de obra</li><li class="sep"></li>
+            <li>Multiservicios</li><li class="sep"></li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================================
+     MANIFIESTO + CIFRAS
+     ============================================================ -->
+<section class="manifesto" id="manifiesto" aria-labelledby="manifiesto-title">
+    <div class="container">
+        <h2 class="sr-only" id="manifiesto-title">Cómo trabajamos</h2>
+        <p class="manifesto-text" data-words>Una buena obra empieza mucho antes del primer ladrillo. Empieza en una conversación, se aclara en un plano y se confirma en un render que puedes recorrer con la vista. Después, la construimos tal como la imaginaste.</p>
+
+        <ul class="stats">
+            <li class="stat" data-reveal>
+                <span class="stat-num"><span data-count="6">6</span></span>
+                <span class="stat-label">servicios integrados en un solo despacho</span>
+            </li>
+            <li class="stat" data-reveal style="--d:.1s">
+                <span class="stat-num"><span data-count="2">2</span></span>
+                <span class="stat-label">ciudades de atención en Campeche y Yucatán</span>
+            </li>
+            <li class="stat" data-reveal style="--d:.2s">
+                <span class="stat-num"><span data-count="1">1</span></span>
+                <span class="stat-label">equipo responsable, del plano a la obra</span>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================================
+     SERVICIOS (bento)
+     ============================================================ -->
+<section class="section services" id="servicios" aria-labelledby="servicios-title">
+    <div class="container">
+        <header class="section-head">
+            <p class="eyebrow" data-reveal>Servicios</p>
+            <h2 class="split" id="servicios-title">Todo tu proyecto bajo un mismo techo.</h2>
+            <p class="section-lead" data-reveal>De los primeros planos a la última supervisión, cada servicio se conecta con el siguiente para que nada se pierda en el camino.</p>
+        </header>
+
+        <div class="bento">
+            <article class="cell cell--planos" data-reveal data-spot>
+                <img class="cell-img" src="img/planos.jpg" alt="Manos revisando planos arquitectónicos y fotografías de un proyecto sobre una mesa de trabajo" width="1400" height="933" loading="lazy" decoding="async">
+                <div class="cell-body">
+                    <svg class="ic ic-lg" aria-hidden="true"><use href="#i-blueprint"/></svg>
+                    <h3>Planos arquitectónicos</h3>
+                    <p>Plantas claras y precisas. Cada medida pensada para construirse sin sorpresas.</p>
+                </div>
+            </article>
+
+            <article class="cell cell--render" data-reveal style="--d:.08s" data-spot>
+                <img class="cell-img" src="img/render.jpg" alt="Render 3D de una casa moderna de concreto al atardecer con jardín y cochera" width="1100" height="1375" loading="lazy" decoding="async">
+                <div class="cell-body">
+                    <svg class="ic ic-lg" aria-hidden="true"><use href="#i-cube"/></svg>
+                    <h3>Renders realistas</h3>
+                    <p>Mira tu fachada y tus espacios con realismo antes de poner el primer ladrillo.</p>
+                </div>
+            </article>
+
+            <article class="cell cell--fachada" data-reveal style="--d:.16s" data-spot>
+                <img class="cell-img" src="img/fachada.jpg" alt="Fachada de una casa contemporánea de ladrillo y vidrio iluminada al anochecer" width="1400" height="933" loading="lazy" decoding="async">
+                <div class="cell-body">
+                    <svg class="ic ic-lg" aria-hidden="true"><use href="#i-house-line"/></svg>
+                    <h3>Diseño de fachadas</h3>
+                    <p>Una imagen exterior con carácter, funcional y con identidad propia.</p>
+                </div>
+            </article>
+
+            <article class="cell cell--interior" data-reveal style="--d:.24s" data-spot>
+                <img class="cell-img" src="img/interior.jpg" alt="Sala moderna con muebles oscuros, paneles de madera y luz natural" width="1400" height="933" loading="lazy" decoding="async">
+                <div class="cell-body">
+                    <svg class="ic ic-lg" aria-hidden="true"><use href="#i-armchair"/></svg>
+                    <h3>Diseño interior</h3>
+                    <p>Espacios que reflejan tu estilo y se sienten bien al habitarlos.</p>
+                </div>
+            </article>
+
+            <article class="cell cell--levantamiento cell--blue" data-reveal data-spot>
+                <span class="ruler" aria-hidden="true"></span>
+                <div class="cell-body">
+                    <svg class="ic ic-lg" aria-hidden="true"><use href="#i-ruler"/></svg>
+                    <h3>Levantamientos arquitectónicos</h3>
+                    <p>Medimos y documentamos lo existente para diseñar sobre bases reales.</p>
+                </div>
+            </article>
+
+            <article class="cell cell--construccion" data-reveal style="--d:.08s" data-spot>
+                <img class="cell-img" src="img/construccion.jpg" alt="Ampliación de una casa en construcción con muros de block y estructura metálica" width="1600" height="1200" loading="lazy" decoding="async">
+                <div class="cell-body">
+                    <svg class="ic ic-lg" aria-hidden="true"><use href="#i-crane"/></svg>
+                    <h3>Construcción</h3>
+                    <p>Construimos tu proyecto tal como se diseñó, cuidando cada etapa y cada acabado.</p>
+                </div>
+            </article>
+
+            <article class="cell cell--supervision cell--ghost" data-reveal style="--d:.16s" data-spot>
+                <svg class="cell-watermark" aria-hidden="true"><use href="#i-hard-hat"/></svg>
+                <div class="cell-body">
+                    <svg class="ic ic-lg" aria-hidden="true"><use href="#i-hard-hat"/></svg>
+                    <h3>Supervisión de obra</h3>
+                    <p>Revisamos que lo construido sea fiel a lo diseñado y aprobado.</p>
+                </div>
+            </article>
+
+            <article class="cell cell--multi" data-reveal data-spot>
+                <div class="cell-body">
+                    <svg class="ic ic-lg" aria-hidden="true"><use href="#i-toolbox"/></svg>
+                    <h3>¿No ves lo que buscas? Tenemos multiservicios.</h3>
+                    <p>Cuéntanos qué necesitas para tu casa o negocio y te decimos cómo podemos ayudarte.</p>
+                </div>
+                <a class="btn btn-primary btn-lg" href="https://wa.me/529381372075" data-wa="services" data-magnetic>
+                    <span>Cuéntanos tu idea</span>
+                    <svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                </a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     PROCESO (sticky + línea que se dibuja con el scroll)
+     ============================================================ -->
+<section class="section process" id="proceso" aria-labelledby="proceso-title">
+    <div class="container process-grid">
+        <div class="process-aside">
+            <div class="process-sticky">
+                <h2 class="split" id="proceso-title">De tu idea a tu obra, en cuatro etapas.</h2>
+                <p class="section-lead" data-reveal>Sabrás qué sigue, qué decides y qué recibes en cada etapa.</p>
+                <figure class="process-fig" data-reveal>
+                    <img src="img/proceso-planos.jpg" alt="Planos y dibujos arquitectónicos sobre una mesa con lápiz y escuadra" width="1200" height="800" loading="lazy" decoding="async" data-parallax>
+                </figure>
+                <a class="btn btn-primary btn-lg" href="https://wa.me/529381372075" data-wa="process" data-magnetic>
+                    <span>Estoy listo para empezar</span>
+                    <svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <ol class="steps" data-steps>
+            <li class="step">
+                <span class="step-node" aria-hidden="true"><svg class="ic"><use href="#i-calendar-check"/></svg></span>
+                <div class="step-body">
+                    <h3>Agendamos tu cita</h3>
+                    <p>Atendemos solo con cita para dedicarte tiempo completo. Escuchamos tu idea, tu terreno o tu espacio.</p>
+                </div>
+            </li>
+            <li class="step">
+                <span class="step-node" aria-hidden="true"><svg class="ic"><use href="#i-ruler"/></svg></span>
+                <div class="step-body">
+                    <h3>Levantamiento y planos</h3>
+                    <p>Medimos, documentamos y dibujamos plantas claras y precisas sobre las que se puede construir.</p>
+                </div>
+            </li>
+            <li class="step">
+                <span class="step-node" aria-hidden="true"><svg class="ic"><use href="#i-cube"/></svg></span>
+                <div class="step-body">
+                    <h3>Diseño y render</h3>
+                    <p>Defines fachada e interiores viendo imágenes realistas, antes de invertir en obra.</p>
+                </div>
+            </li>
+            <li class="step">
+                <span class="step-node" aria-hidden="true"><svg class="ic"><use href="#i-hard-hat"/></svg></span>
+                <div class="step-body">
+                    <h3>Construcción y supervisión</h3>
+                    <p>Construimos y supervisamos cada etapa para que el resultado sea fiel a lo aprobado.</p>
+                </div>
+            </li>
+        </ol>
+    </div>
+</section>
+
+<!-- ============================================================
+     PLANO → RESULTADO (comparador animado)
+     TODO: reemplazar las dos imágenes por un proyecto real del cliente
+           (plano y fotografía/render del mismo encuadre).
+     ============================================================ -->
+<section class="section render" id="render" aria-labelledby="render-title">
+    <div class="container">
+        <header class="section-head section-head--center">
+            <h2 class="split" id="render-title">Primero lo ves. Después lo construimos.</h2>
+            <p class="section-lead" data-reveal>Desliza y descubre cómo un plano se convierte en un espacio real. Con renders realistas decides con certeza, antes de construir.</p>
+        </header>
+
+        <div class="compare" data-compare data-reveal>
+            <div class="compare-frame" style="--pos:.5">
+                <img class="compare-img compare-plano" src="img/casa-moderna-plano.jpg" alt="Plano en líneas azules de una casa moderna de dos niveles" width="2000" height="1125" loading="lazy" decoding="async" draggable="false">
+                <div class="compare-reveal">
+                    <img class="compare-img compare-real" src="img/casa-moderna.jpg" alt="Fotografía de la misma casa moderna de dos niveles con ventanales de madera y jardín" width="2000" height="1125" loading="lazy" decoding="async" draggable="false">
+                </div>
+                <div class="compare-handle" aria-hidden="true">
+                    <span class="compare-knob">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg>
+                    </span>
+                </div>
+            </div>
+            <input class="compare-range" type="range" min="0" max="100" value="50" step="1" aria-label="Deslizar para comparar el plano con el resultado">
+            <div class="compare-captions" aria-hidden="true">
+                <span>El plano</span>
+                <span>El resultado</span>
+            </div>
+        </div>
+
+        <div class="render-cta" data-reveal>
+            <a class="btn btn-primary btn-lg" href="https://wa.me/529381372075" data-wa="render" data-magnetic>
+                <span>Quiero ver mi proyecto</span>
+                <svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     ESPACIOS (galería con desplazamiento horizontal anclado)
+     TODO: reemplazar por fotografías reales de proyectos del cliente.
+     ============================================================ -->
+<section class="spaces" id="espacios" aria-labelledby="espacios-title">
+    <div class="spaces-pin" data-hpan>
+        <header class="spaces-head">
+            <p class="eyebrow" data-reveal>Inspiración</p>
+            <h2 class="split" id="espacios-title">Imagina tu espacio. Nosotros lo trazamos.</h2>
+            <p class="section-lead" data-reveal>Fachadas, patios, estancias e interiores. Un vistazo a los espacios que podemos diseñar y construir para ti.</p>
+        </header>
+
+        <div class="spaces-viewport" data-hpan-viewport>
+            <ul class="spaces-track" data-hpan-track>
+                <li class="space-card">
+                    <figure>
+                        <div class="space-media"><img src="img/galeria-fachada-blanca.jpg" alt="Fachada blanca contemporánea con volúmenes limpios y un árbol joven" width="1000" height="1508" loading="lazy" decoding="async"></div>
+                        <figcaption><h3>Fachadas contemporáneas</h3><p>Volúmenes limpios, luz natural y materiales con carácter.</p></figcaption>
+                    </figure>
+                </li>
+                <li class="space-card">
+                    <figure>
+                        <div class="space-media"><img src="img/galeria-patio.jpg" alt="Patio moderno entre dos volúmenes con mesa de fuego al anochecer" width="1000" height="1500" loading="lazy" decoding="async"></div>
+                        <figcaption><h3>Patios y terrazas</h3><p>Espacios abiertos para convivir, descansar y recibir.</p></figcaption>
+                    </figure>
+                </li>
+                <li class="space-card">
+                    <figure>
+                        <div class="space-media"><img src="img/galeria-sala.jpg" alt="Sala y comedor modernos con grandes ventanales y piso de madera" width="1200" height="798" loading="lazy" decoding="async"></div>
+                        <figcaption><h3>Salas y estancias</h3><p>Ambientes cálidos, funcionales y pensados para vivirse.</p></figcaption>
+                    </figure>
+                </li>
+                <li class="space-card">
+                    <figure>
+                        <div class="space-media"><img src="img/galeria-interior.jpg" alt="Interior con muro de mármol, paneles de madera y repisas a medida" width="1200" height="800" loading="lazy" decoding="async"></div>
+                        <figcaption><h3>Interiores a medida</h3><p>Detalles, texturas y mobiliario que cuentan tu historia.</p></figcaption>
+                    </figure>
+                </li>
+                <li class="space-card">
+                    <figure>
+                        <div class="space-media"><img src="img/galeria-detalle.jpg" alt="Detalle de una fachada con lamas inclinadas contra el cielo del atardecer" width="1000" height="1500" loading="lazy" decoding="async"></div>
+                        <figcaption><h3>Arquitectura en detalle</h3><p>Ritmo, proporción y geometría que se sienten al verse.</p></figcaption>
+                    </figure>
+                </li>
+                <li class="space-end">
+                    <h3>¿Algún estilo te habló?</h3>
+                    <p>Cuéntanos cuál y lo llevamos a tu terreno.</p>
+                    <a class="btn btn-primary btn-lg" href="https://wa.me/529381372075" data-wa="spaces" data-magnetic>
+                        <span>Quiero algo así</span>
+                        <svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="spaces-progress" aria-hidden="true"><span></span></div>
+    </div>
+</section>
+
+<!-- ============================================================
+     POR QUÉ ELEGIRNOS (lista con vista previa que sigue al cursor)
+     ============================================================ -->
+<section class="section why" id="nosotros" aria-labelledby="nosotros-title">
+    <div class="container">
+        <header class="section-head">
+            <h2 class="split" id="nosotros-title">Un despacho que diseña y también construye.</h2>
+        </header>
+
+        <ul class="why-list" data-why>
+            <li class="why-row" data-preview="0" data-reveal>
+                <h3>Un solo equipo, de principio a fin</h3>
+                <p>Quien diseña tu proyecto es quien lo construye. Sin intermediarios ni versiones distintas de la misma idea.</p>
+                <svg class="ic why-arrow" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+            </li>
+            <li class="why-row" data-preview="1" data-reveal>
+                <h3>Ves tu proyecto antes de construirlo</h3>
+                <p>Renders realistas para decidir fachada, materiales y acabados con confianza.</p>
+                <svg class="ic why-arrow" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+            </li>
+            <li class="why-row" data-preview="2" data-reveal>
+                <h3>Planos claros y precisos</h3>
+                <p>Documentación que tú entiendes y que quien construye puede ejecutar sin dudas.</p>
+                <svg class="ic why-arrow" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+            </li>
+            <li class="why-row" data-preview="3" data-reveal>
+                <h3>Obra supervisada de cerca</h3>
+                <p>Revisamos avances y detalles para que lo construido sea fiel a lo diseñado.</p>
+                <svg class="ic why-arrow" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+            </li>
+        </ul>
+
+        <div class="why-preview" aria-hidden="true">
+            <img src="img/equipo-obra.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async">
+            <img src="img/render-interior.jpg" alt="" width="1200" height="629" loading="lazy" decoding="async">
+            <img src="img/trazo.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async">
+            <img src="img/medicion.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async">
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     PREGUNTAS FRECUENTES
+     ============================================================ -->
+<section class="section faq" id="faq" aria-labelledby="faq-title">
+    <div class="container faq-grid">
+        <div class="faq-aside">
+            <h2 class="split" id="faq-title">Preguntas frecuentes</h2>
+            <p class="section-lead" data-reveal>Lo que más nos preguntan antes de iniciar un proyecto.</p>
+            <a class="btn btn-ghost btn-lg" href="https://wa.me/529381372075" data-wa="faq" data-magnetic>
+                <svg class="ic" aria-hidden="true"><use href="#i-whatsapp-logo"/></svg>
+                <span>Resolver mi duda</span>
+            </a>
+        </div>
+
+        <div class="faq-list" data-accordion>
+            <div class="faq-item" data-reveal>
+                <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a1" id="faq-q1"><span>¿Cómo solicito una cotización?</span><svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></button></h3>
+                <div class="faq-a" id="faq-a1" role="region" aria-labelledby="faq-q1"><div><p>Escríbenos por WhatsApp o llena el formulario de contacto. Te responderemos para agendar una cita y entender lo que necesitas.</p></div></div>
+            </div>
+            <div class="faq-item" data-reveal>
+                <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a2" id="faq-q2"><span>¿Atienden solo con cita?</span><svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></button></h3>
+                <div class="faq-a" id="faq-a2" role="region" aria-labelledby="faq-q2"><div><p>Sí. Para darte atención personalizada trabajamos con cita previa. Puedes agendarla por WhatsApp.</p></div></div>
+            </div>
+            <div class="faq-item" data-reveal>
+                <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a3" id="faq-q3"><span>¿Qué incluye el diseño arquitectónico?</span><svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></button></h3>
+                <div class="faq-a" id="faq-a3" role="region" aria-labelledby="faq-q3"><div><p>Dependiendo de tu proyecto: levantamiento, plantas arquitectónicas, diseño de fachada, diseño interior y renders realistas. Lo definimos contigo en la cita.</p></div></div>
+            </div>
+            <div class="faq-item" data-reveal>
+                <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a4" id="faq-q4"><span>¿Pueden construir lo que diseñan?</span><svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></button></h3>
+                <div class="faq-a" id="faq-a4" role="region" aria-labelledby="faq-q4"><div><p>Sí. Además del diseño ofrecemos construcción y supervisión de obra, para que el resultado sea fiel al proyecto aprobado.</p></div></div>
+            </div>
+            <div class="faq-item" data-reveal>
+                <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a5" id="faq-q5"><span>¿Trabajan en Campeche y Yucatán?</span><svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></button></h3>
+                <div class="faq-a" id="faq-a5" role="region" aria-labelledby="faq-q5"><div><p>Tenemos atención en Ciudad del Carmen, Campeche, y en Mérida, Yucatán. Escríbenos para confirmar disponibilidad en tu zona.</p></div></div>
+            </div>
+            <div class="faq-item" data-reveal>
+                <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a6" id="faq-q6"><span>¿Ofrecen otros servicios además del diseño y la obra?</span><svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></button></h3>
+                <div class="faq-a" id="faq-a6" role="region" aria-labelledby="faq-q6"><div><p>Sí, ofrecemos multiservicios. Cuéntanos qué necesitas y te decimos cómo podemos ayudarte.</p></div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     CONTACTO
+     ============================================================ -->
+<section class="section contact" id="contacto" aria-labelledby="contacto-title">
+    <div class="contact-bg" aria-hidden="true"></div>
+    <div class="container">
+        <header class="contact-head">
+            <p class="eyebrow" data-reveal>Contacto</p>
+            <h2 class="split" id="contacto-title">Tu proyecto empieza con una conversación.</h2>
+            <p class="section-lead" data-reveal>Escríbenos y agenda tu cita. Atendemos solo con cita para darte la atención que tu proyecto merece.</p>
+            <a class="btn btn-primary btn-lg" href="https://wa.me/529381372075" data-wa="contact" data-magnetic data-reveal>
+                <svg class="ic" aria-hidden="true"><use href="#i-whatsapp-logo"/></svg>
+                <span>Hablemos de mi proyecto</span>
+            </a>
+        </header>
+
+        <div class="contact-grid">
+            <address class="contact-card" data-reveal>
+                <ul>
+                    <li>
+                        <svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>
+                        <div><span class="k">WhatsApp y teléfono</span><a href="tel:+529381372075">+52 938 137 2075</a></div>
+                    </li>
+                    <li>
+                        <svg class="ic" aria-hidden="true"><use href="#i-envelope-simple"/></svg>
+                        <div><span class="k">Correo</span><a href="mailto:ronniecruz2304@gmail.com">ronniecruz2304@gmail.com</a></div>
+                    </li>
+                    <li>
+                        <svg class="ic" aria-hidden="true"><use href="#i-instagram-logo"/></svg>
+                        <div><span class="k">Instagram</span><a href="https://www.instagram.com/arq.ronnie.cruzb" target="_blank" rel="noopener">@arq.ronnie.cruzb</a></div>
+                    </li>
+                    <li>
+                        <svg class="ic" aria-hidden="true"><use href="#i-map-pin"/></svg>
+                        <div><span class="k">Atención en</span><span class="v">Ciudad del Carmen, Campeche<br>Mérida, Yucatán</span></div>
+                    </li>
+                    <li>
+                        <svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg>
+                        <div><span class="k">Horario</span><span class="v">Solo con cita</span></div>
+                    </li>
+                </ul>
+            </address>
+
+            <form class="contact-form" id="wa-form" novalidate data-reveal style="--d:.1s">
+                <h3>Cuéntanos tu idea</h3>
+                <p class="form-help">Te responderemos por WhatsApp para agendar tu cita.</p>
+
+                <div class="field">
+                    <label for="f-nombre">Nombre</label>
+                    <input id="f-nombre" name="nombre" type="text" autocomplete="name" required aria-describedby="e-nombre">
+                    <p class="field-error" id="e-nombre" role="alert"></p>
+                </div>
+
+                <div class="field">
+                    <label for="f-tel">Teléfono <span class="opt">(opcional)</span></label>
+                    <input id="f-tel" name="telefono" type="tel" autocomplete="tel" inputmode="tel">
+                </div>
+
+                <div class="field">
+                    <label for="f-servicio">¿Qué necesitas?</label>
+                    <select id="f-servicio" name="servicio" required aria-describedby="e-servicio">
+                        <option value="" selected disabled>Selecciona un servicio</option>
+                        <option>Planos arquitectónicos</option>
+                        <option>Renders 3D</option>
+                        <option>Diseño de fachada</option>
+                        <option>Diseño interior</option>
+                        <option>Levantamiento arquitectónico</option>
+                        <option>Construcción</option>
+                        <option>Supervisión de obra</option>
+                        <option>Multiservicios</option>
+                        <option>Aún no lo sé, quiero asesoría</option>
+                    </select>
+                    <p class="field-error" id="e-servicio" role="alert"></p>
+                </div>
+
+                <div class="field">
+                    <label for="f-mensaje">Tu idea <span class="opt">(opcional)</span></label>
+                    <textarea id="f-mensaje" name="mensaje" rows="4"></textarea>
+                </div>
+
+                <button class="btn btn-primary btn-lg btn-block" type="submit" data-magnetic>
+                    <svg class="ic" aria-hidden="true"><use href="#i-paper-plane-tilt"/></svg>
+                    <span>Enviar mi idea por WhatsApp</span>
+                </button>
+
+                <p class="form-success" id="form-success" role="status" hidden>
+                    <svg class="ic" aria-hidden="true"><use href="#i-check-circle"/></svg>
+                    <span>Listo. Abrimos WhatsApp con tu mensaje. Si no se abrió, <a id="form-fallback" href="https://wa.me/529381372075" target="_blank" rel="noopener">toca aquí</a>.</span>
+                </p>
+            </form>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer">
+    <div class="container footer-top">
+        <div class="footer-brand">
+            <img class="footer-logo footer-logo--dark" src="img/logo-dark.webp" alt="Arq. Ronnie Cruz, Diseño y Construcción" width="640" height="325" loading="lazy">
+            <img class="footer-logo footer-logo--light" src="img/logo-light.webp" alt="" width="640" height="325" loading="lazy">
+            <p>Diseño arquitectónico, renders y construcción. Transformamos tus ideas en espacios que inspiran.</p>
+        </div>
+
+        <nav class="footer-col" aria-label="Servicios">
+            <h2>Servicios</h2>
+            <ul>
+                <li><a href="#servicios">Planos arquitectónicos</a></li>
+                <li><a href="#servicios">Renders 3D</a></li>
+                <li><a href="#servicios">Diseño de fachadas</a></li>
+                <li><a href="#servicios">Construcción</a></li>
+                <li><a href="#servicios">Supervisión de obra</a></li>
+            </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Contacto">
+            <h2>Contacto</h2>
+            <ul>
+                <li><a href="https://wa.me/529381372075" data-wa="footer">WhatsApp</a></li>
+                <li><a href="tel:+529381372075">+52 938 137 2075</a></li>
+                <li><a href="mailto:ronniecruz2304@gmail.com">Correo</a></li>
+                <li><a href="https://www.instagram.com/arq.ronnie.cruzb" target="_blank" rel="noopener">Instagram</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="footer-mega" aria-hidden="true">RONNIE CRUZ</div>
+
+    <div class="container footer-bottom">
+        <p>© 2026 Arq. Ronnie Cruz. Todos los derechos reservados.</p>
+        <a href="#top">Volver arriba</a>
+    </div>
+</footer>
+
+<!-- ============================================================
+     BOTÓN FLOTANTE DE WHATSAPP
+     ============================================================ -->
+<aside aria-label="Contacto rápido">
+    <a class="fab" href="https://wa.me/529381372075" data-wa="fab" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+        <span class="fab-tip" aria-hidden="true">¿Platicamos de tu proyecto?</span>
+        <span class="fab-icon"><svg class="ic" aria-hidden="true"><use href="#i-whatsapp-logo"/></svg></span>
+    </a>
+</aside>
+
+<!-- Librerías locales (carpeta vendor/) -->
+<script src="vendor/gsap.min.js" defer></script>
+<script src="vendor/ScrollTrigger.min.js" defer></script>
+<script src="vendor/lenis.min.js" defer></script>
+<script src="app.js" defer></script>
+
+<!--
+    Créditos de imágenes (licencia Pexels, uso libre):
+    planos 6615095 | render 12713156 | fachada 4626268 | interior 34549301 | construcción 4692281
+    casa-moderna 35361412 | galería 11435856, 7522607, 9877524, 27164974, 14965664
+    equipo-obra 8961034 | render-interior 209630 | trazo 6615294 | medición 8293699 | proceso 8837511
+-->
+</body>
+</html>
